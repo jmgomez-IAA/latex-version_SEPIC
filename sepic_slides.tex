@@ -1,11 +1,34 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[latin1]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\title {Sistema embebidos para instrumentación científica}
+\subtitle {Version 2019}
+\author[JP, JM]{Juan Pedro Cobos\inst{1} \and Juan Manuel Gómez\inst{2}}
+\institute[VFU]
+{
+  \inst{1}
+  Instituto de Astrofísica de Andalucía
+  \and
+  \inst{2}
+  Instituto de Astrofísica de Andalucía
+}
+\date {\today}
+
+
 \begin{document}
-\include{boiler_plate/pagina_titulo}
-\newpage
 \include{boiler_plate/prologo}
 \include{boiler_plate/schedule}
 \newpage
 
-\include{boiler_plate/agradecimientos}
+%\include{boiler_plate/agradecimientos}
 \include{boiler_plate/autores}
 \tableofcontents
 \listoffigures
@@ -13,50 +36,50 @@
 
 %% MICROCONTROLADORES
 \newpage
-\include{intro_embebidos/caracterizacion}
-\include{intro_embebidos/flujo_trabajo}
+%\include{intro_embebidos/caracterizacion}
+%\include{intro_embebidos/flujo_trabajo}
 
 \newpage
-\include{rpi3_so/cfg_pixel-base}
-\include{rpi3_so/cfg_headless-system}
+%\include{rpi3_so/cfg_pixel-base}
+%\include{rpi3_so/cfg_headless-system}
 
 \newpage
 \include{rpi3_util/linux_cmd_basicos}
-\include{rpi3_util/linux_cli_util}
+%\include{rpi3_util/linux_cli_util}
 
 \newpage
-\include{rpi3\_cfg-kernel/linux_arranque}
-\include{rpi3\_cfg-kernel/linux_hw-support}
+%\include{rpi3\_cfg-kernel/linux_arranque}
+%\include{rpi3\_cfg-kernel/linux_hw-support}
 
 \newpage
-\include{rpi3\_uso-if/if_gpio}
-\include{rpi3\_uso-if/if_onewire}
-\include{rpi3\_uso-if/if_i2c}
-\include{rpi3\_uso-if/if_hw-support_advanced}
-\include{rpi3\_uso-if/if_spi}
-\include{rpi3\_uso-if/if_pwm}
+%\include{rpi3\_uso-if/if_gpio}
+%\include{rpi3\_uso-if/if_onewire}
+%\include{rpi3\_uso-if/if_i2c}
+%\include{rpi3\_uso-if/if_hw-support_advanced}
+%\include{rpi3\_uso-if/if_spi}
+%\include{rpi3\_uso-if/if_pwm}
 
 \newpage
-\include{avance_embebidos/custom_linux_img}
-\include{avance_embebidos/custom_linux_bootloader}
+%\include{avance_embebidos/custom_linux_img}
+%\include{avance_embebidos/custom_linux_bootloader}
 
 %% MICROCONTROLADORES
 
 \newpage
-\include{arduino_intro/caracterizacion}
-\include{arduino_intro/flujo_trabajo}
-\include{arduino_intro/arduino_entorno}
+%\include{arduino_intro/caracterizacion}
+%\include{arduino_intro/flujo_trabajo}
+%\include{arduino_intro/arduino_entorno}
 
 \newpage
-\include{arduino_uso-if/if_analog}
+%\include{arduino_uso-if/if_analog}
 
 \newpage
-\include{arduino_core/arduino_core}
-\include{arduino\_core/arduino\_attiny85}
-\include{arduino\_core/arduino\_isp}
+%\include{arduino_core/arduino_core}
+%\include{arduino\_core/arduino\_attiny85}
+%\include{arduino\_core/arduino\_isp}
 
 \newpage
-\include{arduino-mk/intro_cross-compilers}
+%\include{arduino-mk/intro_cross-compilers}
 
 %% More chapters
 
